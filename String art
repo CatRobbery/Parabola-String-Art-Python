@@ -1,0 +1,26 @@
+#Python turtle, thonny. CatRobbery.
+
+from turtle import *
+
+speed('fastest')
+penup()
+bgcolor('black')
+    
+#curve
+    
+pencolor('#00F0FF')
+def curve(interval,length):
+    goto(length/-2,length/-2)
+    pencolor('white')
+    pendown()
+    for i in range(4): #square
+        forward(length)
+        left(90)
+    pencolor('cyan')
+    for i in range(int(length/interval)): #lines
+        penup()
+        goto(length/-2,length/2-i*interval)
+        pendown()
+        goto(length/-2+i*interval,length/-2)
+        
+curve(20,600)#you can edit this 
