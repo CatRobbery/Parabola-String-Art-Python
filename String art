@@ -8,7 +8,6 @@ bgcolor('black')
     
 #curve
     
-pencolor('#00F0FF')
 def curve(interval,length):
     goto(length/-2,length/-2)
     pencolor('white')
@@ -16,7 +15,7 @@ def curve(interval,length):
     for i in range(4): #square
         forward(length)
         left(90)
-    pencolor('cyan')
+    pencolor('#00F0FF')
     for i in range(int(length/interval)): #lines
         penup()
         goto(length/-2,length/2-i*interval)
